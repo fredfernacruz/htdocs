@@ -1,0 +1,40 @@
+
+		*{
+			margin: 0;
+			border:0;
+			padding:0;
+
+
+
+		}
+
+		#imagem-topo{
+          background: #4169E1;
+          text-align: center;
+		}
+		p{
+			
+			padding: 25px;
+			text-align: justify;
+			font-family: arial;
+			font-size: 18px;
+		}
+		h1 ,h2{
+			font-family: arial;
+			text-align: center;
+		}
+		h3{
+			font-family: arial;
+
+		}
+		img{
+			width: 50%;
+			height: 50%;
+		}
+		.contato{
+			font-size:0.98em; 
+		}
+		footer{
+			background: #4169E1;
+          text-align: center;
+		}
