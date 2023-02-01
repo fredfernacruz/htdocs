@@ -3,13 +3,14 @@
 			margin: 0;
 			border:0;
 			padding:0;
+			font-family: arial;
 
 
 
 		}
 
 		#imagem-topo{
-          background: #4169E1;
+          background: #000 ;
           text-align: center;
 		}
 		p{
@@ -35,7 +36,8 @@
 			font-size:0.98em; 
 		}
 		footer{
-			background: #4169E1;
-          text-align: center;
-          height: 150px;
+			background: #000;
+        	text-align: center;
+          	height: 150px;
+          	color: #fff;
 		}
