@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport content=" width= device-width, initial-scale=1 ">
+	<title>Teste de JavaScript </title>
+<style>
+
+#resultado{
+
+  border: 1px solid #cccc;
+  width: 400px;
+  height: 200px;
+
+}
+</style>
+
+
+</head>
+<body>
+  Informe o nome do cliente:<br>
+<input type="text" id="nomeCliente" autofocus="">
+<br><br>
+Informe o nome do produto:<br>
+<input type="text" id="produto">
+<br><br>
+Informe a quantidade:<br>
+<input type="text" id="quantidadeProduto" onfocusout="calcula()" ></input>
+<br>
+<br>
+<div id="resultado">
+</div>
+
+  <script type="text/JavaScript">
+  	
+    function calcula() {
+       let nomeCliente = document.getElementById('nomeCliente').value;
+  	   let idCliente = 1;
+  	   var produto = document.getElementById('produto').value;
+      
+  	  const preço = 299.59;
+      let quantidade = document.getElementById('quantidadeProduto').value;
+  	 
+
+  	   console.log (" Olá Sr(a)"+ nomeCliente+", seu id de usuário "+idCliente);
+       // documento pega o elemento pelo ID
+       document.getElementById('resultado').innerText = " Olá Sr(a)"+ nomeCliente+", seu id de usuário "+idCliente;
+
+  	   console.log ("O produto selecionado foi", produto);
+  	   console.log ("O preço individual é R$", preço);
+  	   console.log ("A quantidade solicitada é:"+quantidade+" unidade (s)");
+  	   console.log ("O total a pagar é R$"+quantidade*preço);
+    }
+  	   
+
+
+
+  </script>
+
+
+</body>
+</html>
