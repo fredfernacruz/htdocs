@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang= "pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<title>Exemplo javascript</title>
+	
+
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="ferias.html" class="link"> <<< Voltar </a>
+		</nav> 
+
+		<h3>FFC-TREINAMENTOS</h3><br>
+		<h4>EXEMPLOS DE PÁGINA JAVASCRIPT</h4>
+		
+	</header><br>
+	<br><br><br><br><br><br>
+
+	<!--
+	<div class="compre">
+		<h5>compre agora mesmo</h5>
+		<button>COMPRAR</button>
+		
+	</div> -->
+	
+  <section class="container">
+	<h2>FÉRIAS</h2>
+	<p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
+	<p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
+	<br><br>
+	<div class="resposta">
+			<script type="text/javascript">
+				let salário = prompt("Insira o seu atual salário");
+				salário = Number(salário);
+				let abono =salário/3;
+				let bruto = salário+abono;
+				let imposto =bruto/100*9;
+				let liquido = bruto-imposto;
+
+				document.write("salário Informado: R$"+salário+"<br />"+"<br />"); 
+				document.write("Abono de 1/3: R$"+abono+"<br />"+"<br />")
+				document.write("Valor de Bruto de Férias: R$"+bruto+"<br />"+"<br />");
+				document.write("Valor de imposto: R$"+imposto+"<br />"+"<br />");
+				document.write("Valor a Receber: R$"+liquido+"<br />"+"<br />");
+			</script>
+			</div>
+	
+	<br><br>
+	
+	</section><br><br><br>
+   
+
+<!--
+	<section class="container" id="formulario">
+		<h2>selecione um produto para mais informações</h2>
+		<form action="#" method="get" target=" _blank">
+
+			<p class="formulario-contato">
+				<label for="nome">Nome</label><br>
+
+
+			<input  class="dados-formulario" type="text" id="nome" name="nome" placeholder="insira seu nome">
+		  </p>
+
+		
+		<p class="formulario-contato">
+				<label for="contato">Contato</label><br>
+
+
+			<input class="dados-formulario" type="tel" id="tel" name="tel" placeholder="insira seu WHATSAPP">
+
+		  </p>
+		  <p class="formulario-contato">
+		  	<input type="checkbox" id="office" name="office" value="cursos de office">
+		  	<label for="office"> Quero saber mais sobre os cursos de pacote office</label><br><br>
+
+		  	<input type="checkbox" id="web" name="web" value="cursos de dev web">
+		  	<label for="web"> Quero saber mais sobre os cursos de desenvolvimento web</label><br><br>
+
+		  	<input type="checkbox" id="Marketing" name="Marketing" value="cursos de Marketing Digital">
+		  	<label for="Marketing"> Quero saber mais sobre os cursos de desenvolvimento web</label><br>
+		  </p>
+		  <p class="formulario-contato">
+		  	<input type="submit" value="ENVIAR">
+		  	<input type="reset" value="LIMPAR">
+		  	
+		  </p>
+
+	
+
+       </form>
+</section> -->
+
+<br><br>
+	<footer>
+		<h3>FFC-TREINAMENTOS</h3>
+		<h4>EXEMPLO DE PÁGINA EM JAVASCRIPT</h4>
+		<p class="texto-footer">CONTATOS</p>
+		<p class="texto-footer">fredericofernandes560@gmail.com</p>
+		<p class="texto-footer">WHATSAPP(31)98543-2808</p>
+		<p class="texto-footer">CNPJ:00.000.000/0001-00</p>
+	</footer>
+
+</body>
+</html>

@@ -44,12 +44,20 @@ Informe a quantidade:<br>
 
   	   console.log (" Olá Sr(a)"+ nomeCliente+", seu id de usuário "+idCliente);
        // documento pega o elemento pelo ID
-       document.getElementById('resultado').innerText = " Olá Sr(a)"+ nomeCliente+", seu id de usuário "+idCliente;
+       
+
+       var resultadoFinal = " Olá Sr(a)"+ nomeCliente+", seu id de usuário "+idCliente + "O produto selecionado foi "+ produto + "O produto selecionado foi"+ produto + "O preço individual é R$"+ preço + "A quantidade solicitada é:"+quantidade+" unidade (s)" + "O total a pagar é R$"+quantidade*preço;
+
+       document.getElementById('resultado').innerText = resultadoFinal;
+      
+
+
 
   	   console.log ("O produto selecionado foi", produto);
-  	   console.log ("O preço individual é R$", preço);
-  	   console.log ("A quantidade solicitada é:"+quantidade+" unidade (s)");
-  	   console.log ("O total a pagar é R$"+quantidade*preço);
+        console.log ("O preço individual é R$", preço);
+         console.log ("A quantidade solicitada é:"+quantidade+" unidade (s)");
+ 	   console.log ("O total a pagar é R$"+quantidade*preço);
+
     }
   	   
 

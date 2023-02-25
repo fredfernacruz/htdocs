@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport content="width=device-width, initial-scale=1, maximum-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 	<title>Exemplo javascript</title>
 	
 
@@ -13,8 +13,8 @@
 		<nav>
 			<a href="#">INICIO</a>
 			<a href="#">FGTS</a>
-			<a href="#ferias">FÉRIAS</a>
-			<a href="#decimo">DECIMO</a>
+			<a href="#">FÉRIAS</a>
+			<a href="#">DECIMO</a>
 		</nav> 
 
 		<h3>FFC-TREINAMENTOS</h3><br>
@@ -51,13 +51,10 @@
 	<label for="salário">Salário</label><br>
 	<input type="number" id="salário" placeholder="Insira o seu salário">
 	<br><br>
-
 	<label for="tempo">Tempo Trabalhado(em meses)</label><br>
-
 
 	<input  type="number" id="tempo" placeholder="Insira o numero de meses">
 	<br><br>
-	<a href="#" id="ferias"></a>
 	<button onclick="FGTS()">CALCULAR</button>
 	<br><br>
 	<p> O valor aproximado de FGTS no período é de:R$ <span></span></p>
@@ -71,7 +68,7 @@
         	Resultado.innerHTML = parseFloat(salário.value/100*8)*tempo.value;
         }
 	</script>
-	    
+	   
 </section>
 	<br><br>
   
@@ -80,11 +77,10 @@
 	<p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
 	<p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
 	<h2>Cálculo</h2>
-	<br><br><br><br>
-	<a href="#" id="decimo"></a>
-	<a href="ferias/ferias.html" class="link">Clique para Calcular Férias </a>
 	<br><br>
-
+	
+	<a href="ferias.html" class="link">Clique para Calcular Férias </a>
+	<br><br>
 	
 	</section><br><br><br>
    
@@ -93,38 +89,16 @@
 	<p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país em 1962. O direito ao trabalhador foi implementado no governo João Goulart, por meio da lei nº 4.090/1962.</p>
 	<p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
 	<h2>Cálculo</h2>
-     <br><br><br>
-	<a href="decimo13/decimo13.html" class="link">Calcular décimo terceiro </a>
-	<br><br>
 	</section><br><br><br>
 
-<section class="container"id="grid-container">
-	<h3>Clique para saber mais</h3>
+<section class="container"id="grid-container" id="formulario">
 	<div class="grid"> 
-		<div>
-			<h2>FGTS</h2>
-			<img src="img/fgts.png" alt="imagem FGTS">
-		</div>
-		<div>
-			<H2>Férias</H2>
-			<a href="ferias.html"><img src="img/ferias.png" alt="imagem Férias"></a>
-		</div>
-		<div>
-			<h2>Decimo</h2>
-			<a href="decimo.html"><img src="img/decimo.png" alt="imagem Decimo"></a>
-		</div>
-		<div>
-			<h2>investimentos</h2>
-			<img src="img/investimentos.png" alt="Imagem Investimentos">
-		</div>
-		<div>
-			<h2>Renda Extra</h2>
-			<img src="img/renda-extra.png" alt="Imagem Renda Extra">
-		</div>
-		<div>
-			<h2>Serviços</h2>
-			<img src="img/servicos.png"  alt="Imagem Serviços">
-		</div>
+		<div> conteudo 1</div>
+		<div> conteudo 2</div>
+		<div> conteudo 3</div>
+		<div> conteudo 4</div>
+		<div> conteudo 5</div>
+		<div> conteudo 6</div>
 
 	</div>
 

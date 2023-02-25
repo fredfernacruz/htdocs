@@ -3,24 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport content="width=device-width, initial-scale=1, maximum-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<title>Exemplo javascript</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<title>Exemplos de javascript</title>
 	
 
 </head>
 <body>
 	<header>
 		<nav>
-			<a href="#">INICIO</a>
-			<a href="#">FGTS</a>
-			<a href="#ferias">FÉRIAS</a>
-			<a href="#decimo">DECIMO</a>
+			<a href="../javascript.html" class="link"> << Voltar </a><br><br>
+			<a href="javascript:location.reload()" class="link"> << Recalcular </a>
 		</nav> 
 
 		<h3>FFC-TREINAMENTOS</h3><br>
 		<h4>EXEMPLOS DE PÁGINA JAVASCRIPT</h4>
 		
 	</header><br>
+	<br><br>
 
 
 	<!--
@@ -41,94 +40,29 @@
 		<p>Em resumo essa página foi criada apenas a título de exemplo para alunos de cursos de desenvolvimento de sites e não deverá ser considerada como base para qualquer tipo de cálculo trabalhista.</p><br>
 </section> 
 </header><br><br><br>
-	<section class="container">
-	<h2>FGTS</h2>
-	<br>
-
-	<p>O que é: O FGTS é uma poupança aberta pela empresa em nome do trabalhador que funciona como uma garantia para protegê-lo em caso de demissão sem justa causa.</p> 
-	<p>Os valores do FGTS pertencem exclusivamente ao trabalhador e, em algumas situações especiais, pode ser sacado sem que o trabalhador tenha deixado o emprego.</p>
-	<h2>Cálculo</h2>
-	<label for="salário">Salário</label><br>
-	<input type="number" id="salário" placeholder="Insira o seu salário">
-	<br><br>
-
-	<label for="tempo">Tempo Trabalhado(em meses)</label><br>
-
-
-	<input  type="number" id="tempo" placeholder="Insira o numero de meses">
-	<br><br>
-	<a href="#" id="ferias"></a>
-	<button onclick="FGTS()">CALCULAR</button>
-	<br><br>
-	<p> O valor aproximado de FGTS no período é de:R$ <span></span></p>
-
-	<script type="text/javascript">
-		let salário= document.querySelector('#salário');
-		let Tempo= document.querySelector('#Tempo');
-		let Resultado= document.querySelector('span');
-
-        function FGTS(){
-        	Resultado.innerHTML = parseFloat(salário.value/100*8)*tempo.value;
-        }
-	</script>
-	    
-</section>
-	<br><br>
-  
-  <section class="container">
-	<h2>FÉRIAS</h2>
-	<p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
-	<p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
-	<h2>Cálculo</h2>
-	<br><br><br><br>
-	<a href="#" id="decimo"></a>
-	<a href="ferias/ferias.html" class="link">Clique para Calcular Férias </a>
-	<br><br>
-
 	
-	</section><br><br><br>
-   
    <section class="container">
 	<h2>DÉCIMO</h2>
 	<p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país em 1962. O direito ao trabalhador foi implementado no governo João Goulart, por meio da lei nº 4.090/1962.</p>
 	<p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
-	<h2>Cálculo</h2>
-     <br><br><br>
-	<a href="decimo13/decimo13.html" class="link">Calcular décimo terceiro </a>
 	<br><br>
-	</section><br><br><br>
+	
+	<div class="resposta">
+		<script type="text/javascript">
+			let salário = prompt("digite o valor do seu salário");
+			salário = Number(salário);
+			let primeiraParcela = salário/2;
+			let imposto = salário/100*9;
+			let segundaParcela = salário-imposto-primeiraParcela;
 
-<section class="container"id="grid-container">
-	<h3>Clique para saber mais</h3>
-	<div class="grid"> 
-		<div>
-			<h2>FGTS</h2>
-			<img src="img/fgts.png" alt="imagem FGTS">
-		</div>
-		<div>
-			<H2>Férias</H2>
-			<a href="ferias.html"><img src="img/ferias.png" alt="imagem Férias"></a>
-		</div>
-		<div>
-			<h2>Decimo</h2>
-			<a href="decimo.html"><img src="img/decimo.png" alt="imagem Decimo"></a>
-		</div>
-		<div>
-			<h2>investimentos</h2>
-			<img src="img/investimentos.png" alt="Imagem Investimentos">
-		</div>
-		<div>
-			<h2>Renda Extra</h2>
-			<img src="img/renda-extra.png" alt="Imagem Renda Extra">
-		</div>
-		<div>
-			<h2>Serviços</h2>
-			<img src="img/servicos.png"  alt="Imagem Serviços">
-		</div>
-
+			document.write("Salário informado:R$"+salário+"<br />")
+			document.write("primeira parcela:"+primeiraParcela+"<br />")
+			document.write("Imposto:R$"+imposto+"<br />")
+			document.write("Segunda parcela:R$"+segundaParcela+"<br />")
+		</script>
 	</div>
 
-</section> 
+
 <!--
 	<section class="container" id="formulario">
 		<h2>selecione um produto para mais informações</h2>
